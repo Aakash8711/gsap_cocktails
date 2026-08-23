@@ -1,6 +1,6 @@
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
-import { cocktailLists } from "../../constants"
+import { cocktailLists, mockTailLists } from "../../constants"
 
 const Cocktails = () => {
     useGSAP(() => {
@@ -34,6 +34,22 @@ const Cocktails = () => {
                         {cocktailLists.map(({name, country, detail, price}) => (
                             <li key={name}>
                                 <div className="md:me-28">
+                                    <h3>{name}</h3>
+                                    <p>{country} | {detail}</p>
+                                </div>
+                                <span>- {price}</span>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+
+                <div className="loved">
+                    <h2>Most loved mocktails:</h2>
+
+                    <ul>
+                        {mockTailLists.map(({name, country, detail, price}) => (
+                            <li key={name}>
+                                <div className="me-28">
                                     <h3>{name}</h3>
                                     <p>{country} | {detail}</p>
                                 </div>
