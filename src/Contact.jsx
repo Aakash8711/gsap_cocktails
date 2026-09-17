@@ -32,7 +32,7 @@ const Contact = () => {
 
                 <div>
                     <h3>Visit Our Bar</h3>
-                    <p>434, Rajiv Chowk, Canute Place, New Delhi, India</p>
+                    <p>434, Rajiv Chowk, Connaught Place, New Delhi, India</p>
                 </div>
 
                 <div>
